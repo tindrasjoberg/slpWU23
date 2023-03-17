@@ -12,11 +12,13 @@
     --bg-color: #2a2a2a;
     --second-bg-color: #202020;
     --text-color: #fff;
-    --main-color: #ff4d05;
+    --main-color: rgb(113, 113, 30);  
     --big-font: 5rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
 }
+
+/* #ff4d05 */
 
 body {
     background: var(--bg-color);
@@ -119,6 +121,7 @@ section{
 }
 
 .home-text h1{
+    margin-top: 15px;
     font-size: var(--big-font);
     font-weight: 700;
     color: var(--text-color);
@@ -135,10 +138,12 @@ section{
 }
 
 .home-text p{
-    color: white;
+    color: black;
     font-size: var(--p-font);
     line-height: 1.8;
     margin: 40px;
+    margin-right: 610px;
+    margin-left: 0px;
 }
 
 .button {
@@ -149,6 +154,7 @@ section{
 }
 
 .btn {
+    margin-top: 30px;
     display: inline-block;
     padding: 12px 28px;
     background: var(--main-color);
@@ -288,10 +294,11 @@ header.sticky{
 }
 
 .row img{
-    width: 100%;
+    width: 300px;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
+    height: 180px;
 }
 
 .layer {
@@ -529,6 +536,6 @@ form textarea{
     }
 
     .navlist.open{
-        top: 100%;
+        top: 70px;
     }
 }
