@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
@@ -32,7 +33,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
     padding: 20px 15%;
     border-bottom: 1px solid transparent;
     transition: all  .45s ease;
@@ -109,7 +109,7 @@ section{
 .home-text h3{
     color: var(--text-color);
     margin: 0 0 35px;
-    font-size: 3rem;
+    font-size: var(--font-2);
     font-weight: 700;
     line-height: 1.1;
     text-shadow: 0
@@ -143,7 +143,7 @@ section{
     transform: scale(0.9);
 }
 
-header.sticky{
+header{
     background: var(--color-grey);
     border-bottom: 1px solid var(--color);
     padding: 12px 15%;
@@ -153,10 +153,11 @@ header.sticky{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .about-img img{
+margin-left: 20%;
     max-width: 280px;
     height: auto;
     width: 100%;
@@ -165,7 +166,7 @@ header.sticky{
 
 .about-text h2{
     font-size: var(--font-2);
-    line-height: 1;
+    line-height: 1.2;
 }
 
 .about-text p{
@@ -437,31 +438,10 @@ form textarea{
         padding: 12px 2.5%;
         transition: .1s;
     }
-    header.sticky{
-        padding: 10px 2.5%;
-        transition: .1s;;
-    }
     section{
         padding: 110px 3% 60px;
     }
 
-}
-
-@media (max-width: 1100px){
-    :root{
-        --font-1: 4rem;
-        --font-2: 2.5rem;
-        --font-3: 1rem;
-        transition: .1s;
-    }
-
-    .home-text h3{
-        font-size: 2.5rem;
-    }
-
-    .home{
-        height: 87vh;
-    }
 }
 
 @media (max-width: 920px){
@@ -476,6 +456,7 @@ form textarea{
         width: 250px;
         height: auto;
         max-width: 100%;
+        margin-left: 0%;
     }
     .contact{
         grid-template-columns: 1fr;
@@ -484,8 +465,16 @@ form textarea{
 
 @media (max-width: 840px){
 
+    .home{
+        height: 90vh;
+    }
+
     .home-text h1{
         font-size: 3rem;
+    }
+
+    .home-text h3{
+        font-size: 2.5rem;
     }
 
     #menu-icon{
@@ -520,7 +509,7 @@ form textarea{
     }
 
     .navlist.open{
-        top: 70px;
+        top: 60px;
     }
 
     .kort img{
