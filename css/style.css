@@ -35,12 +35,12 @@ header{
     justify-content: space-between;
     padding: 20px 15%;
     border-bottom: 1px solid transparent;
-    transition: all  .45s ease;
+    transition: all .45s ease;
 }
 
 .logga{
     color: var(--text-color);
-    font-size: 33px;
+    font-size: 35px;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -434,10 +434,11 @@ form textarea{
 }
 
 @media (max-width: 1480px){
+
     header{
         padding: 12px 2.5%;
-        transition: .1s;
     }
+
     section{
         padding: 110px 3% 60px;
     }
