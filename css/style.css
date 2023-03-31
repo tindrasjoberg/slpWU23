@@ -9,19 +9,17 @@
 }
 
 :root{
-    --bg-color: #2a2a2a;
-    --second-bg-color: #202020;
+    --color-grey: #2a2a2a;
+    --color-black: #202020;
     --text-color: #fff;
-    --main-color: rgb(113, 113, 30);  
-    --big-font: 5rem;
-    --h2-font: 3rem;
-    --p-font: 1.1rem;
+    --color: rgb(113, 113, 30);  
+    --font-1: 5rem;
+    --font-2: 3rem;
+    --font-3: 1rem;
 }
 
-/* #ff4d05 */
-
 body {
-    background: var(--bg-color);
+    background: var(--color-grey);
     color: var(--text-color);
 }
 
@@ -48,7 +46,7 @@ header{
 }
 
 span {
-    color: var(--main-color);
+    color: var(--color);
 }
 
 .navlist{
@@ -64,11 +62,11 @@ span {
 }
 
 .navlist a:hover {
-    color: var(--main-color);
+    color: var(--color);
 }
 
 .navlist a.active{
-    color: var(--main-color);
+    color: var(--color);
 }
 
 #menu-icon {
@@ -100,33 +98,12 @@ section{
     margin-bottom: 20px;
 }
 
-.one {
-    display: inline-block;
-    margin-right: 15px;
-    height: 0 15px;
-    line-height: 32px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 5px;
-    background: var(--main-color);
-    color: var(--text-color);
-
-}
-
-.two{
-    display: inline-block;
-    color: var(--text-color);
-    font-size: 20px;
-    font-weight: 500;
-}
-
 .home-text h1{
-    margin-top: 15px;
-    font-size: var(--big-font);
+    font-size: var(--font-1);
     font-weight: 700;
     color: var(--text-color);
     line-height: 1.1;
-    color: 0 0 8px;
+	text-shadow: 0px 1px 4px black;
 }
 
 .home-text h3{
@@ -135,34 +112,29 @@ section{
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.1;
+    text-shadow: 0px 1px 4px black;
 }
 
 .home-text p{
     color: black;
-    font-size: var(--p-font);
+    font-size: var(--font-3);
     line-height: 1.8;
     margin: 40px;
     margin-right: 610px;
     margin-left: 0px;
 }
 
-.button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
 .btn {
     margin-top: 30px;
     display: inline-block;
     padding: 12px 28px;
-    background: var(--main-color);
+    background: var(--color);
     border-radius: 5px;
     color: white;
     font-size: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
+    box-shadow: 0px 1px 4px black ;
 }
 
 /* ta Bort */
@@ -171,10 +143,12 @@ section{
 }
 
 header.sticky{
-    background: var(--bg-color);
-    border-bottom: 1px solid #fffff1a;
+    background: var(--color-grey);
+    border-bottom: 1px solid var(--color);
     padding: 12px 15%;
 }
+
+
 
 .about {
     display: grid;
@@ -191,19 +165,19 @@ header.sticky{
 }
 
 .about-text h2{
-    font-size: var(--h2-font);
+    font-size: var(--font-2);
     line-height: 1;
 }
 
 .about-text p{
     color: white;
-    font-size: var(--p-font);
+    font-size: var(--font-3);
     line-height: 1.8;
     margin-bottom: 4rem;
 }
 
 .services {
-    background: var(--second-bg-color);
+    background: var(--color-black);
 }
 
 .main-text {
@@ -217,7 +191,7 @@ header.sticky{
 }
 
 .main-text h2{
-    font-size: var(--h2-font);
+    font-size: var(--font-2);
     line-height: 1;
 }
 
@@ -230,7 +204,7 @@ header.sticky{
 }
 
 .box {
-    background: var(--bg-color);
+    background: var(--color-grey);
     padding: 35px 45px;
     border-radius: 8px;
     transition: all .45s ease;
@@ -294,17 +268,17 @@ header.sticky{
 }
 
 .row img{
-    width: 300px;
+    width: 100%;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
-    height: 180px;
+    height: 200px;
 }
 
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1), #ff004f);
+    background: linear-gradient(rgba(0,0,0,0.1),rgb(113, 113, 30));
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -332,7 +306,7 @@ header.sticky{
 }
 
 .layer i{
-    color: var(--main-color);
+    color: var(--color);
     margin-top: 20px;
     font-size: 20px;
     background: var(--text-color);
@@ -344,16 +318,12 @@ header.sticky{
     border-radius: 50%;
 }
 
-.row:hover img{
-    transform: scale(1.1);
-}
-
 .row:hover .layer{
     height: 100%;
 }
 
 .contact {
-    background: var(--second-bg-color);
+    background: var(--color-black);
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -368,13 +338,13 @@ header.sticky{
 }
 
 .contact-text h2{
-    font-size: var(--h2-font);
+    font-size: var(--font-2);
     line-height: 1;
 }
 
 .contact-text p{
     color: white;
-    font-size: var(--p-font);
+    font-size: var(--font-3);
     line-height: 1.8;
     margin-bottom: 30px;
 }
@@ -402,7 +372,7 @@ header.sticky{
 .contact-icons i{
     height: 45px;
     width: 45px;
-    background: var(--main-color);
+    background: var(--color);
     color: var(--text-color);
     font-size: 22px;
     display: inline-flex;
@@ -415,7 +385,7 @@ header.sticky{
 
 .contact-icons i:hover{
     background: var(--text-color);
-    color: var(--main-color);
+    color: var(--color);
 }
 
 .contact-form form{
@@ -426,7 +396,7 @@ header.sticky{
 form textarea{
     width: 100%;
     padding: 14px;
-    background: var(--bg-color);
+    background: var(--color-grey);
     color: var(--text-color);
     border: none;
     outline: none;
@@ -443,10 +413,10 @@ form textarea{
 .contact-form .submit{
     display: inline-block;
     font-size: 16px;
-    background: var(--main-color);
+    background: var(--color);
     color: var(--text-color);
     width: 175px;
-    transition: all .45 ease;
+    transition: all .45s ease;
 }
 
 .contact-form .submit:hover {
@@ -471,9 +441,9 @@ form textarea{
 
 @media (max-width: 1100px){
     :root{
-        --big-font: 4rem;
-        --h2-font: 2.5rem;
-        --p-font: 1rem;
+        --font-1: 4rem;
+        --font-2: 2.5rem;
+        --font-3: 1rem;
         transition: .1s;
     }
 
@@ -495,7 +465,7 @@ form textarea{
         order: 2;
     }
     .about-img img{
-        width: 100%;
+        width: 250px;
         height: auto;
         max-width: 100%;
     }
@@ -503,6 +473,7 @@ form textarea{
         grid-template-columns: 1fr;
     }
 }
+
 @media (max-width: 840px){
     #menu-icon{
         display: block;
@@ -514,7 +485,7 @@ form textarea{
         left: 0;
         display: flex;
         flex-direction: column;
-        background: var(--bg-color);
+        background: var(--color-grey);
         text-align: left;
         transition: all .45s ease;
     }
@@ -528,7 +499,7 @@ form textarea{
     }
 
     .navlist a:hover{
-        color: var(--main-color);
+        color: var(--color);
     }
 
     .navlist a.active{
@@ -537,5 +508,14 @@ form textarea{
 
     .navlist.open{
         top: 70px;
+    }
+
+    .row img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .layer {
+        width: 300px;
     }
 }
