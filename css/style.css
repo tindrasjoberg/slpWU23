@@ -149,6 +149,9 @@ header{
     padding: 12px 15%;
 }
 
+
+/* Om oss */
+
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -331,7 +334,10 @@ header{
     height: 100%;
 }
 
-.contact {
+
+/* kontakt del */
+
+.kontakt {
     background: var(--color-black);
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -339,19 +345,19 @@ header{
     gap: 2.5rem;
 }
 
-.contact-text h4{
+.kontakt-text h4{
     color: var(--text-color);
     margin: 18px 0;
     font-size: 20px;
     font-weight: 600;
 }
 
-.contact-text h2{
+.kontakt-text h2{
     font-size: var(--font-2);
     line-height: 1;
 }
 
-.contact-text p{
+.kontakt-text p{
     color: white;
     font-size: var(--font-3);
     line-height: 1.8;
@@ -378,7 +384,7 @@ header{
     transform: translateY(5px);
 }
 
-.contact-icons i{
+.kontakt-icons i{
     height: 45px;
     width: 45px;
     background: var(--color);
@@ -392,10 +398,12 @@ header{
     transition: all .45s ease;
 }
 
-.contact-icons i:hover{
+.kontakt-icons i:hover{
     background: var(--text-color);
     color: var(--color);
 }
+
+/* Här börjar css till formet. Detta har jag mestadels tagit från internet */
 
 .contact-form form{
     position: relative;
@@ -433,16 +441,15 @@ form textarea{
     cursor: pointer;
 }
 
-@media (max-width: 1480px){
+/* mobilanpassning */
 
+@media (max-width: 1480px){
     header{
         padding: 12px 2.5%;
     }
-
     section{
         padding: 110px 3% 60px;
     }
-
 }
 
 @media (max-width: 920px){
@@ -458,7 +465,7 @@ form textarea{
         max-width: 100%;
         margin-left: 0%;
     }
-    .contact{
+    .kontakt{
         grid-template-columns: 1fr;
     }
 }
