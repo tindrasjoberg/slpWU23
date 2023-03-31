@@ -38,7 +38,7 @@ header{
     transition: all .45s ease;
 }
 
-.logga{
+.logga {
     color: var(--text-color);
     font-size: 35px;
     font-weight: 700;
@@ -157,7 +157,7 @@ header{
 }
 
 .about-img img{
-margin-left: 20%;
+    margin-left: 25%;
     max-width: 280px;
     height: auto;
     width: 100%;
@@ -451,7 +451,6 @@ form textarea{
     }
     .about-img{
         text-align: center;
-        order: 2;
     }
     .about-img img{
         width: 250px;
