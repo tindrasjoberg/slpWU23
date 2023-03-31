@@ -112,7 +112,8 @@ section{
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.1;
-    text-shadow: 0px 1px 4px black;
+    text-shadow: 0
+    1px 4px black;
 }
 
 .home-text p{
@@ -147,8 +148,6 @@ header.sticky{
     border-bottom: 1px solid var(--color);
     padding: 12px 15%;
 }
-
-
 
 .about {
     display: grid;
@@ -210,7 +209,7 @@ header.sticky{
     transition: all .45s ease;
 }
 
-.s-icons {
+.icons {
     font-size: 32px;
     margin-bottom: 20px;
 }
@@ -475,6 +474,11 @@ form textarea{
 }
 
 @media (max-width: 840px){
+
+    .home-text h1{
+        font-size: 3rem;
+    }
+
     #menu-icon{
         display: block;
     }
