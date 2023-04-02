@@ -9,6 +9,24 @@
     scroll-behavior: smooth;
 }
 
+/* länkar */
+
+#about {
+    scroll-margin-top: 10vh;
+}
+
+#jobb {
+scroll-margin-top: 10vh;
+}
+
+#services {
+    scroll-margin-top: 10vh;
+}
+
+#kontakt {
+    scroll-margin-top: 10vh;
+}
+
 :root{
     --color-grey: #2a2a2a;
     --color-black: #202020;
@@ -148,7 +166,6 @@ header{
     border-bottom: 1px solid var(--color);
     padding: 12px 15%;
 }
-
 
 /* Om oss */
 
@@ -302,7 +319,7 @@ header{
     justify-content: center;
     text-align: center;
     padding: 0 40px;
-    transition: height 0.5s;
+    transition: 0.5s;
 }
 
 .layer h5{
@@ -528,10 +545,10 @@ form textarea{
         top: 60px;
     }
 
-    .kort {
+    /* .kort {
         display: flex;
         justify-content: center;
-    }
+    } */
 
     .kort img{
         width: 300px;
@@ -541,7 +558,6 @@ form textarea{
 
     .layer {
         width: 300px;
-        margin-left: 34px;
     }
 
 }
