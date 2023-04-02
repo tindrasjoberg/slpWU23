@@ -282,9 +282,10 @@ header{
 
 
 .jobb-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 2.5rem;
     margin-top: 5rem;
 }
@@ -294,6 +295,7 @@ header{
     overflow: hidden;
     border-radius: 8px;
     cursor: pointer;
+    width: 250px;
 }
 
 .kort img{
@@ -543,21 +545,6 @@ form textarea{
 
     .navlist.open{
         top: 60px;
-    }
-
-    /* .kort {
-        display: flex;
-        justify-content: center;
-    } */
-
-    .kort img{
-        width: 300px;
-        height: 200px;
-        
-    }
-
-    .layer {
-        width: 300px;
     }
 
 }
